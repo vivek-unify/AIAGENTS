@@ -1,0 +1,21 @@
+# config/openai_config.yaml
+openai:
+  api_key: "${OPENAI_API_KEY}"  # Will be loaded from environment variable
+  models:
+    architect: "gpt-4"  # For complex architectural decisions
+    developer: "gpt-3.5-turbo"  # For implementation tasks
+  
+  parameters:
+    architect:
+      temperature: 0.7
+      max_tokens: 2000
+      top_p: 1.0
+      frequency_penalty: 0.0
+      presence_penalty: 0.0
+    
+    developer:
+      temperature: 0.5
+      max_tokens: 2000
+      top_p: 1.0
+      frequency_penalty: 0.0
+      presence_penalty: 0.0
